@@ -1,0 +1,389 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Consulta de usuario com sucesso",
+        "description": "",
+        "id": "validar-api-brasilprev;consulta-de-usuario-com-sucesso;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 416666207,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que eu adiciono o endpoint \"http://localhost:8080\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080",
+                  "offset": 28
+                }
+              ],
+              "location": "StepUsuario.queEuAdicionoOEndpoint(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 583152158,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "adiciono o ddd com o valor",
+            "match": {
+              "location": "StepUsuario.adicionoODddComOValor()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 12195584,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "adiciono o telefone com o valor",
+            "match": {
+              "location": "StepUsuario.adicionoOTelefoneComOValor()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 64707998,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e doesn\u0027t match actual status code \u003c404\u003e.\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\n\tat com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\n\tat com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\n\tat steps.StepUsuario.euVisualizoAMensagemSucesso(StepUsuario.java:82)\n\tat ✽.Entao eu visualizo a mensagem sucesso(ListaUsuario.feature:9)\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "eu visualizo a mensagem sucesso",
+            "match": {
+              "location": "StepUsuario.euVisualizoAMensagemSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Consulta de usuario com falha endpoint",
+        "description": "",
+        "id": "validar-api-brasilprev;consulta-de-usuario-com-falha-endpoint;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11762754,
+              "error_message": "java.net.ConnectException: Conexão recusada (Connection refused)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:607)\n\tat org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)\n\tat org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)\n\tat com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)\n\tat com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\n\tat steps.StepUsuario.queEuAdicionoOEndpointNaPortaInvalida(StepUsuario.java:88)\n\tat ✽.Dado que eu adiciono o endpoint \"http://localhost:8070\" na porta invalida(ListaUsuario.feature:17)\n",
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "que eu adiciono o endpoint \"http://localhost:8070\" na porta invalida",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8070",
+                  "offset": 28
+                }
+              ],
+              "location": "StepUsuario.queEuAdicionoOEndpointNaPortaInvalida(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "adiciono ddd com \"11/\" o valor que nao exista e \"948801405\" celular valido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11/",
+                  "offset": 18
+                },
+                {
+                  "val": "948801405",
+                  "offset": 49
+                }
+              ],
+              "location": "StepUsuario.adicionoDddComOValorQueNaoExistaECelularValido(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "adiciono o telefone com o valor \"948801405\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "948801405",
+                  "offset": 33
+                }
+              ],
+              "location": "StepUsuario.adicionoOTelefoneComOValor(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "eu visualizo a mensagem sucesso",
+            "match": {
+              "location": "StepUsuario.euVisualizoAMensagemSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Consulta de usuario com sucesso",
+        "description": "",
+        "id": "validar-api-brasilprev;consulta-de-usuario-com-sucesso;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5278273,
+              "error_message": "java.net.ConnectException: Conexão recusada (Connection refused)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:607)\n\tat org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)\n\tat org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)\n\tat org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)\n\tat org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)\n\tat org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)\n\tat org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)\n\tat org.apache.http.client.HttpClient$execute$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)\n\tat com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)\n\tat com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)\n\tat com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)\n\tat com.jayway.restassured.filter.Filter$filter.call(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\n\tat com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)\n\tat com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)\n\tat com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)\n\tat org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)\n\tat com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)\n\tat steps.StepUsuario.queEuAdicionoOEndpointNaPortaInvalida(StepUsuario.java:88)\n\tat ✽.Dado que eu adiciono o endpoint \"http://localhost:8070\" na porta invalida(ListaUsuario.feature:28)\n",
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "que eu adiciono o endpoint \"http://localhost:8070\" na porta invalida",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8070",
+                  "offset": 28
+                }
+              ],
+              "location": "StepUsuario.queEuAdicionoOEndpointNaPortaInvalida(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "adiciono ddd com \"11/\" o valor que exista e o celular \"948801405\" valido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11/",
+                  "offset": 18
+                },
+                {
+                  "val": "948801405",
+                  "offset": 55
+                }
+              ],
+              "location": "StepUsuario.adicionoDddComOValorQueExistaEOCelularValido(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "eu visualizo a mensagem sucesso",
+            "match": {
+              "location": "StepUsuario.euVisualizoAMensagemSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Cadastro de usuario",
+        "description": "",
+        "id": "validar-api-brasilprev;cadastro-de-usuario;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 132491860,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "o endpoint \"http://localhost:8080/pessoas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/pessoas",
+                  "offset": 12
+                }
+              ],
+              "location": "StepUsuario.oEndpoint(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 15537,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "adiciono um telefone e um cpf",
+            "match": {
+              "location": "StepUsuario.adicionoUmTelefoneEUmCpf()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 9404,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "eu enviar um post para a API",
+            "match": {
+              "location": "StepUsuario.euEnviarUmPostParaAAPI()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 8505,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "eu recebo um status code de sucesso",
+            "match": {
+              "location": "StepUsuario.euReceboUmStatusCodeDeSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Cadastro de usuario",
+        "description": "",
+        "id": "validar-api-brasilprev;cadastro-de-usuario;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58799,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "uum cadastro endpoint \"http://localhost:8080/pessoas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8080/pessoas",
+                  "offset": 23
+                }
+              ],
+              "location": "StepUsuario.uumCadastroEndpoint(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 28188412,
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e doesn\u0027t match actual status code \u003c400\u003e.\n\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:760)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:120)\n\tat com.jayway.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\n\tat com.jayway.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)\n\tat com.jayway.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\n\tat steps.StepUsuario.adicionoUmTelefoneEUmCpf(StepUsuario.java:26)\n\tat ✽.E adiciono um telefone \"948801405\" e um cpf \"06598677459\"(ListaUsuario.feature:50)\n",
+              "status": "failed"
+            },
+            "line": 50,
+            "name": "adiciono um telefone \"948801405\" e um cpf \"06598677459\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "948801405",
+                  "offset": 22
+                },
+                {
+                  "val": "06598677459",
+                  "offset": 43
+                }
+              ],
+              "location": "StepUsuario.adicionoUmTelefoneEUmCpf(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "eu enviar um post para a API",
+            "match": {
+              "location": "StepUsuario.euEnviarUmPostParaAAPI()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "eu recebo um status code de sucesso",
+            "match": {
+              "location": "StepUsuario.euReceboUmStatusCodeDeSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Validar API BrasilPrev",
+    "description": "",
+    "id": "validar-api-brasilprev",
+    "keyword": "Funcionalidade",
+    "uri": "ListaUsuario.feature"
+  }
+]
