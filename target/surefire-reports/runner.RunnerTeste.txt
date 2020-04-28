@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunnerTeste
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 2, Errors: 4, Skipped: 5, Time elapsed: 1.421 sec <<< FAILURE! - in runner.RunnerTeste
+Entao eu visualizo a mensagem sucesso(| http://localhost:8080 |)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> doesn't match actual status code <404>.
+
+
+| http://localhost:8080 |  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> doesn't match actual status code <404>.
+
+
+Dado que eu adiciono o endpoint "http://localhost:8070" na porta invalida(| http://localhost:8070 | 11/ | 948801405 |)  Time elapsed: 0.001 sec  <<< ERROR!
+java.net.ConnectException: Conexão recusada (Connection refused)
+
+| http://localhost:8070 | 11/ | 948801405 |  Time elapsed: 0.001 sec  <<< ERROR!
+java.net.ConnectException: Conexão recusada (Connection refused)
+
+Dado que eu adiciono o endpoint "http://localhost:8070" na porta invalida(| http://localhost:8070 | 11/ | 948801405 |)  Time elapsed: 0 sec  <<< ERROR!
+java.net.ConnectException: Conexão recusada (Connection refused)
+
+| http://localhost:8070 | 11/ | 948801405 |  Time elapsed: 0.001 sec  <<< ERROR!
+java.net.ConnectException: Conexão recusada (Connection refused)
+

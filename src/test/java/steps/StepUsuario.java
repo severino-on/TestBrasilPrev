@@ -11,33 +11,35 @@ import cucumber.api.java.pt.Quando;
 
 public class StepUsuario {
 	
-	@Dado("^uum cadastro endpoint \"([^\"]*)\"$")
-	public void uumCadastroEndpoint(String arendpoint) throws Throwable {
+	@Dado("^um cadastro endpoint \"([^\"]*)\"$")
+	public void umCadastroEndpoint(String arendpoint) throws Throwable {
 		
 		//RestAssured.given().contentType(ContentType.JSON).body(myJson).when().post(endPoint).then().statusCode(201)
 	}
 
-	@Dado("^adiciono um telefone \"([^\"]*)\" e um cpf \"([^\"]*)\"$")
-	public void adicionoUmTelefoneEUmCpf(String telefone, String cpf) throws Throwable {
-		String myJson = "{\"nome\":\"Severino Teste\"," + "\"cpf\": "+cpf+","
+	@Dado("^adiciono um telefone (\\d+) e um cpf (\\d+)$")
+	public void adicionoUmTelefoneEUmCpf(int telefone, int cpf){
+		String myJson = "{\"nome\":\"Severino Teste\"," + "\"cpf\":"+cpf+","
 				+ "\"enderecos\":[{\"logradouro\":\"Rua inacio alvarez\"," + "\"numero\":22,\"complemento\":\"Casa\","
 				+ "\"bairro\":\"Jardim Helena\"," + "\"cidade\":\"São Paulo\"," + "\"estado\":\"SP\"}],"
 				+ "\"telefones\":[{\"ddd\":\"11\"," + "\"numero\":"+telefone+"}]}";
-		RestAssured.given().contentType(ContentType.JSON).body(myJson).when().post("/pessoas").then().statusCode(201);
+		RestAssured.given().contentType(ContentType.JSON).body(myJson).when().post("http://localhost:8080/pessoas").then().statusCode(201);
 	}
 	
 	
-	@Dado("^o endpoint \"([^\"]*)\"$")
-	public void oEndpoint(String endPoint) {
-	
-		String myJson = "{\"nome\":\"Severino Teste\"," + "\"cpf\":\"06598677458\","
-				+ "\"enderecos\":[{\"logradouro\":\"Rua inacio alvarez\"," + "\"numero\":22,\"complemento\":\"Casa\","
-				+ "\"bairro\":\"Jardim Helena\"," + "\"cidade\":\"São Paulo\"," + "\"estado\":\"SP\"}],"
-				+ "\"telefones\":[{\"ddd\":\"11\"," + "\"numero\":\"969673875\"}]}";
-		
-		RestAssured.given().contentType(ContentType.JSON).body(myJson).when().post(endPoint).then().statusCode(201);
-
-	}
+	  @Dado("^o endpoint \"([^\"]*)\"$") public void oEndpoint(String endPoint) {
+	  
+	 String myJson = "{\"nome\":\"Severino Teste\"," + "\"cpf\":\"06598677458\","
+	  + "\"enderecos\":[{\"logradouro\":\"Rua inacio alvarez\"," +
+	  "\"numero\":22,\"complemento\":\"Casa\"," + "\"bairro\":\"Jardim Helena\"," +
+	  "\"cidade\":\"São Paulo\"," + "\"estado\":\"SP\"}]," +
+	  "\"telefones\":[{\"ddd\":\"11\"," + "\"numero\":\"969673875\"}]}";
+	  
+	  RestAssured.given().contentType(ContentType.JSON).body(myJson).when().post(
+	  endPoint).then().statusCode(201);
+	  
+	  }
+	 
 
 @Dado("^adiciono ddd com \"([^\"]*)\" o valor que exista e o celular \"([^\"]*)\" valido$")
 public void adicionoDddComOValorQueExistaEOCelularValido(String ddd, String numero) throws Throwable {

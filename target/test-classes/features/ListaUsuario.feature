@@ -46,12 +46,16 @@ Funcionalidade: Validar API BrasilPrev
 	
 	Esquema do Cenario: Cadastro de usuario 
 	
-	Dado uum cadastro endpoint "<endPoint>"
-	E adiciono um telefone "<telefone>" e um cpf "<cpf>"
+	Dado um cadastro endpoint "<endPoint>"
+	E adiciono um telefone <telefone> e um cpf <cpf>
 	Quando eu enviar um post para a API 
 	Entao eu recebo um status code de sucesso
 	
 	Exemplos: 
-	|endPoint           		  | telefone | cpf      |
-	|http://localhost:8080/pessoas|948801405 |06598677459|
+	|endPoint           		  | telefone | cpf       |
+	|http://localhost:8080/pessoas|948801405 |06598677459| 
+	|http://localhost:8080/pessoas|948801406 |06598677460|
+	|http://localhost:8080/pessoas|948801407 |06598677461|
+	|http://localhost:8080/pessoas|948801408 |06598677462|
+	|http://localhost:8080/pessoas|948801409 |06598677453|
 	
