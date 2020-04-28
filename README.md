@@ -2,7 +2,7 @@
 
 
 Para execução do teste usar o comando:  
-#mvn test -Dtest=RunnerTest"
+# mvn test -Dtest=RunnerTest"
 
 
 Ferramentas utilizadas
